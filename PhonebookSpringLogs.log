@@ -393,3 +393,28 @@ Identify and stop the process that's listening on port 8080 or configure this ap
 2023-03-27 21:10:50.407  INFO 19576 --- [scheduling-1] ru.academits.service.ContactService      : all contacts received
 2023-03-27 21:10:50.407  INFO 19576 --- [scheduling-1] ru.academits.service.ContactService      : contacts deleted
 2023-03-27 21:10:55.404  INFO 19576 --- [scheduling-1] ru.academits.service.ContactService      : all contacts received
+2023-03-27 21:18:25.863  INFO 11272 --- [main] ru.academits.PhonebookSpringApplication  : Starting PhonebookSpringApplication using Java 19.0.2 on DESKTOP-IF2RP6D with PID 11272 (G:\programming\projects\ServerDevelopment\PhonebookSpring\target\classes started by namat in G:\programming\projects\ServerDevelopment\PhonebookSpring)
+2023-03-27 21:18:25.865 DEBUG 11272 --- [main] ru.academits.PhonebookSpringApplication  : Running with Spring Boot v2.7.9, Spring v5.3.25
+2023-03-27 21:18:25.865  INFO 11272 --- [main] ru.academits.PhonebookSpringApplication  : No active profile set, falling back to 1 default profile: "default"
+2023-03-27 21:18:26.940  INFO 11272 --- [scheduling-1] ru.academits.service.ContactService      : all contacts received
+2023-03-27 21:18:26.941  INFO 11272 --- [scheduling-1] ru.academits.service.ContactService      : contacts deleted
+2023-03-27 21:18:26.942  INFO 11272 --- [main] ru.academits.PhonebookSpringApplication  : Started PhonebookSpringApplication in 1.319 seconds (JVM running for 1.677)
+2023-03-27 21:18:27.336  INFO 11272 --- [RMI TCP Connection(3)-10.8.0.26] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-27 21:18:27.336  INFO 11272 --- [RMI TCP Connection(3)-10.8.0.26] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-03-27 21:18:30.077  INFO 11272 --- [http-nio-8080-exec-2] ru.academits.service.ContactService      : all contacts received
+2023-03-27 21:18:31.414  INFO 11272 --- [http-nio-8080-exec-4] ru.academits.service.ContactService      : all contacts received
+2023-03-27 21:18:31.942  INFO 11272 --- [scheduling-1] ru.academits.service.ContactService      : all contacts received
+2023-03-27 21:18:31.942  INFO 11272 --- [scheduling-1] ru.academits.service.ContactService      : contacts deleted
+2023-03-27 21:18:33.842  INFO 11272 --- [http-nio-8080-exec-6] ru.academits.service.ContactService      : all contacts received
+2023-03-27 21:18:36.952  INFO 11272 --- [scheduling-1] ru.academits.service.ContactService      : all contacts received
+2023-03-27 21:18:36.952  INFO 11272 --- [scheduling-1] ru.academits.service.ContactService      : contacts deleted
+2023-03-27 21:18:41.948  INFO 11272 --- [scheduling-1] ru.academits.service.ContactService      : all contacts received
+2023-03-27 21:18:46.944  INFO 11272 --- [scheduling-1] ru.academits.service.ContactService      : all contacts received
+2023-03-27 21:19:10.089  INFO 17560 --- [main] ru.academits.PhonebookSpringApplication  : Starting PhonebookSpringApplication using Java 19.0.2 on DESKTOP-IF2RP6D with PID 17560 (G:\programming\projects\ServerDevelopment\PhonebookSpring\target\classes started by namat in G:\programming\projects\ServerDevelopment\PhonebookSpring)
+2023-03-27 21:19:10.091 DEBUG 17560 --- [main] ru.academits.PhonebookSpringApplication  : Running with Spring Boot v2.7.9, Spring v5.3.25
+2023-03-27 21:19:10.091  INFO 17560 --- [main] ru.academits.PhonebookSpringApplication  : No active profile set, falling back to 1 default profile: "default"
+2023-03-27 21:19:11.169  INFO 17560 --- [scheduling-1] ru.academits.service.ContactService      : all contacts received
+2023-03-27 21:19:11.169  INFO 17560 --- [scheduling-1] ru.academits.service.ContactService      : contacts deleted
+2023-03-27 21:19:11.171  INFO 17560 --- [main] ru.academits.PhonebookSpringApplication  : Started PhonebookSpringApplication in 1.319 seconds (JVM running for 1.679)
+2023-03-27 21:19:11.675  INFO 17560 --- [RMI TCP Connection(2)-10.8.0.26] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-27 21:19:11.676  INFO 17560 --- [RMI TCP Connection(2)-10.8.0.26] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
