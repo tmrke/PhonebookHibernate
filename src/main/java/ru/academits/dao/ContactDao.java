@@ -13,28 +13,7 @@ public class ContactDao {
     private final AtomicInteger idSequence = new AtomicInteger(0);
 
     public ContactDao() {
-        Contact contact1 = new Contact();
-        Contact contact2 = new Contact();
-        Contact contact3 = new Contact();
 
-        contact1.setId(getNewId());
-        contact1.setFirstName("Иван");
-        contact1.setLastName("Иванов");
-        contact1.setPhone("9123456701");
-
-        contact2.setId(getNewId());
-        contact2.setFirstName("Марина");
-        contact2.setLastName("Маринина");
-        contact2.setPhone("9123456702");
-
-        contact3.setId(getNewId());
-        contact3.setFirstName("Марина");
-        contact3.setLastName("Иванова");
-        contact3.setPhone("9123456703");
-
-        contactList.add(contact1);
-        contactList.add(contact2);
-        contactList.add(contact3);
     }
 
     private int getNewId() {
