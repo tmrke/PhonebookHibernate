@@ -107,6 +107,7 @@ public class ContactService {
         return contactValidation;
     }
 
+    //deletes random contact every five second
     @Scheduled(fixedRate = 5000)
     public void deleteRandomContacts() {
         List<Contact> allContacts = getAllContacts();
