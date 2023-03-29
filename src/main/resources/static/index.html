@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="ru">
 
 <head>
     <meta charset="utf-8"/>
@@ -21,10 +21,10 @@
     <div class="filter-container">
         <label class="mr-1">
             Введите текст:
-            <input type="text" class="form-control input-sm"/>
+            <input type="text" class="form-control input-sm" v-text="filterString" v-model="filterString"/>
         </label>
-        <button class="btn btn-primary">Отфильтровать</button>
-        <button class="btn btn-primary">Сбросить фильтр</button>
+        <button class="btn btn-primary" v-on:click="filter">Отфильтровать</button>
+        <button class="btn btn-primary" v-on:click="dropFilterString">Сбросить фильтр</button>
     </div>
 
     <table class="table table-bordered contact-table">
@@ -32,7 +32,8 @@
         <tr>
             <th>
                 <label class="select-all-label">
-                    <input type="checkbox" title="Выбрать"/>
+                    <input type="checkbox" v-model="isMainCheckboxChecked" title="Выбрать"
+                           v-on:click="selectAllCheckboxes"/>
                 </label>
             </th>
             <th>№</th>
@@ -43,11 +44,11 @@
         </tr>
         </thead>
         <tbody>
-        <tr v-cloak v-for="row in rows">
+        <tr v-cloak v-for="(row, index) in rows" v-bind:key="row.index">
             <template v-if="row.shown">
                 <td>
                     <label class="select-me-label">
-                        <input type="checkbox" class="select-me"/>
+                        <input type="checkbox" class="select-me" v-model="row.checked"/>
                     </label>
                 </td>
                 <td v-text="row.number"></td>
@@ -55,14 +56,14 @@
                 <td v-text="row.firstName"></td>
                 <td v-text="row.phone"></td>
                 <td>
-                    <button class="btn btn-primary" type="button">Удалить</button>
+                    <button type="button" class="btn btn-primary" v-on:click="deleteContacts(index)">Удалить</button>
                 </td>
             </template>
         </tr>
         </tbody>
     </table>
 
-    <button type="button" class="btn btn-primary">Удалить выбранные</button>
+    <button type="button" class="btn btn-primary" v-on:click="deleteCheckedContacts">Удалить выбранные</button>
 
     <br>
 

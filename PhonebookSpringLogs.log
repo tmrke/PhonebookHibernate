@@ -37,3 +37,182 @@
 2023-03-28 16:57:08.654  INFO 12776 --- [http-nio-8080-exec-2] ru.academits.service.ContactService      : all contacts received
 2023-03-28 16:57:09.754  INFO 12776 --- [http-nio-8080-exec-4] ru.academits.service.ContactService      : all contacts received
 2023-03-28 16:57:10.535  INFO 12776 --- [http-nio-8080-exec-6] ru.academits.service.ContactService      : all contacts received
+2023-03-29 07:34:04.425  INFO 6340 --- [main] ru.academits.PhonebookSpringApplication  : Starting PhonebookSpringApplication using Java 19.0.2 on DESKTOP-K05RAAM with PID 6340 (D:\programming\projects\ServerDevelopment\PhonebookSpring\target\classes started by Timur in D:\programming\projects\ServerDevelopment\PhonebookSpring)
+2023-03-29 07:34:04.435 DEBUG 6340 --- [main] ru.academits.PhonebookSpringApplication  : Running with Spring Boot v2.7.9, Spring v5.3.25
+2023-03-29 07:34:04.438  INFO 6340 --- [main] ru.academits.PhonebookSpringApplication  : No active profile set, falling back to 1 default profile: "default"
+2023-03-29 07:34:07.025  INFO 6340 --- [scheduling-1] ru.academits.service.ContactService      : all contacts received
+2023-03-29 07:34:07.025  INFO 6340 --- [scheduling-1] ru.academits.service.ContactService      : contacts deleted
+2023-03-29 07:34:07.029  INFO 6340 --- [main] ru.academits.PhonebookSpringApplication  : Started PhonebookSpringApplication in 3.206 seconds (JVM running for 4.342)
+2023-03-29 07:34:07.557  INFO 6340 --- [RMI TCP Connection(3)-192.168.31.146] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-29 07:34:07.559  INFO 6340 --- [RMI TCP Connection(3)-192.168.31.146] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-03-29 07:34:12.031  INFO 6340 --- [scheduling-1] ru.academits.service.ContactService      : all contacts received
+2023-03-29 07:34:12.031  INFO 6340 --- [scheduling-1] ru.academits.service.ContactService      : contacts deleted
+2023-03-29 07:34:14.190  INFO 6340 --- [http-nio-8080-exec-8] ru.academits.service.ContactService      : all contacts received
+2023-03-29 07:34:17.026  INFO 6340 --- [scheduling-1] ru.academits.service.ContactService      : all contacts received
+2023-03-29 07:34:17.030  INFO 6340 --- [scheduling-1] ru.academits.service.ContactService      : contacts deleted
+2023-03-29 07:34:22.029  INFO 6340 --- [scheduling-1] ru.academits.service.ContactService      : all contacts received
+2023-03-29 07:34:27.028  INFO 6340 --- [scheduling-1] ru.academits.service.ContactService      : all contacts received
+2023-03-29 07:34:31.508  INFO 6340 --- [http-nio-8080-exec-1] ru.academits.service.ContactService      : all contacts received
+2023-03-29 07:34:32.034  INFO 6340 --- [scheduling-1] ru.academits.service.ContactService      : all contacts received
+2023-03-29 07:34:35.278  INFO 6340 --- [http-nio-8080-exec-9] ru.academits.service.ContactService      : all contacts received
+2023-03-29 07:34:36.478  INFO 6340 --- [http-nio-8080-exec-1] ru.academits.service.ContactService      : all contacts received
+2023-03-29 07:34:37.028  INFO 6340 --- [scheduling-1] ru.academits.service.ContactService      : all contacts received
+2023-03-29 07:34:42.034  INFO 6340 --- [scheduling-1] ru.academits.service.ContactService      : all contacts received
+2023-03-29 07:34:46.688  INFO 6340 --- [http-nio-8080-exec-9] ru.academits.service.ContactService      : all contacts received
+2023-03-29 07:34:47.035  INFO 6340 --- [scheduling-1] ru.academits.service.ContactService      : all contacts received
+2023-03-29 07:34:52.029  INFO 6340 --- [scheduling-1] ru.academits.service.ContactService      : all contacts received
+2023-03-29 07:35:34.593  INFO 4856 --- [main] ru.academits.PhonebookSpringApplication  : Starting PhonebookSpringApplication using Java 19.0.2 on DESKTOP-K05RAAM with PID 4856 (D:\programming\projects\ServerDevelopment\PhonebookSpring\target\classes started by Timur in D:\programming\projects\ServerDevelopment\PhonebookSpring)
+2023-03-29 07:35:34.596 DEBUG 4856 --- [main] ru.academits.PhonebookSpringApplication  : Running with Spring Boot v2.7.9, Spring v5.3.25
+2023-03-29 07:35:34.597  INFO 4856 --- [main] ru.academits.PhonebookSpringApplication  : No active profile set, falling back to 1 default profile: "default"
+2023-03-29 07:35:36.946  INFO 4856 --- [main] ru.academits.PhonebookSpringApplication  : Started PhonebookSpringApplication in 2.888 seconds (JVM running for 3.861)
+2023-03-29 07:35:37.480  INFO 4856 --- [RMI TCP Connection(4)-192.168.31.146] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-29 07:35:37.482  INFO 4856 --- [RMI TCP Connection(4)-192.168.31.146] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-03-29 07:35:43.097  INFO 4856 --- [http-nio-8080-exec-8] ru.academits.service.ContactService      : all contacts received
+2023-03-29 16:26:46.891  INFO 6764 --- [main] ru.academits.PhonebookSpringApplication  : Starting PhonebookSpringApplication using Java 19.0.2 on DESKTOP-K05RAAM with PID 6764 (D:\programming\projects\ServerDevelopment\PhonebookSpring\target\classes started by Timur in D:\programming\projects\ServerDevelopment\PhonebookSpring)
+2023-03-29 16:26:46.895 DEBUG 6764 --- [main] ru.academits.PhonebookSpringApplication  : Running with Spring Boot v2.7.9, Spring v5.3.25
+2023-03-29 16:26:46.895  INFO 6764 --- [main] ru.academits.PhonebookSpringApplication  : No active profile set, falling back to 1 default profile: "default"
+2023-03-29 16:26:49.241  INFO 6764 --- [main] ru.academits.PhonebookSpringApplication  : Started PhonebookSpringApplication in 2.807 seconds (JVM running for 6.105)
+2023-03-29 16:26:49.718  INFO 6764 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-29 16:26:49.721  INFO 6764 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-03-29 16:26:59.418  INFO 6764 --- [http-nio-8080-exec-8] ru.academits.service.ContactService      : all contacts received
+2023-03-29 16:27:22.882  INFO 6764 --- [http-nio-8080-exec-2] ru.academits.service.ContactService      : all contacts received
+2023-03-29 16:28:26.299  INFO 13260 --- [main] ru.academits.PhonebookSpringApplication  : Starting PhonebookSpringApplication using Java 19.0.2 on DESKTOP-K05RAAM with PID 13260 (D:\programming\projects\ServerDevelopment\PhonebookSpring\target\classes started by Timur in D:\programming\projects\ServerDevelopment\PhonebookSpring)
+2023-03-29 16:28:26.303 DEBUG 13260 --- [main] ru.academits.PhonebookSpringApplication  : Running with Spring Boot v2.7.9, Spring v5.3.25
+2023-03-29 16:28:26.303  INFO 13260 --- [main] ru.academits.PhonebookSpringApplication  : No active profile set, falling back to 1 default profile: "default"
+2023-03-29 16:28:30.318  INFO 13260 --- [main] ru.academits.PhonebookSpringApplication  : Started PhonebookSpringApplication in 4.554 seconds (JVM running for 6.267)
+2023-03-29 16:28:30.906  INFO 13260 --- [RMI TCP Connection(4)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-29 16:28:30.908  INFO 13260 --- [RMI TCP Connection(4)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-03-29 16:32:45.451  INFO 13260 --- [http-nio-8080-exec-2] ru.academits.service.ContactService      : all contacts received
+2023-03-29 16:32:52.691  INFO 13260 --- [http-nio-8080-exec-3] ru.academits.service.ContactService      : all contacts received
+2023-03-29 16:33:02.996  INFO 3144 --- [main] ru.academits.PhonebookSpringApplication  : Starting PhonebookSpringApplication using Java 19.0.2 on DESKTOP-K05RAAM with PID 3144 (D:\programming\projects\ServerDevelopment\PhonebookSpring\target\classes started by Timur in D:\programming\projects\ServerDevelopment\PhonebookSpring)
+2023-03-29 16:33:03.001 DEBUG 3144 --- [main] ru.academits.PhonebookSpringApplication  : Running with Spring Boot v2.7.9, Spring v5.3.25
+2023-03-29 16:33:03.002  INFO 3144 --- [main] ru.academits.PhonebookSpringApplication  : No active profile set, falling back to 1 default profile: "default"
+2023-03-29 16:33:06.064  WARN 3144 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+2023-03-29 16:33:06.133 ERROR 3144 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2023-03-29 16:33:34.831  INFO 3436 --- [main] ru.academits.PhonebookSpringApplication  : Starting PhonebookSpringApplication using Java 19.0.2 on DESKTOP-K05RAAM with PID 3436 (D:\programming\projects\ServerDevelopment\PhonebookSpring\target\classes started by Timur in D:\programming\projects\ServerDevelopment\PhonebookSpring)
+2023-03-29 16:33:34.834 DEBUG 3436 --- [main] ru.academits.PhonebookSpringApplication  : Running with Spring Boot v2.7.9, Spring v5.3.25
+2023-03-29 16:33:34.835  INFO 3436 --- [main] ru.academits.PhonebookSpringApplication  : No active profile set, falling back to 1 default profile: "default"
+2023-03-29 16:33:36.957  WARN 3436 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+2023-03-29 16:33:36.996 ERROR 3436 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2023-03-29 16:33:48.638  INFO 10888 --- [main] ru.academits.PhonebookSpringApplication  : Starting PhonebookSpringApplication using Java 19.0.2 on DESKTOP-K05RAAM with PID 10888 (D:\programming\projects\ServerDevelopment\PhonebookSpring\target\classes started by Timur in D:\programming\projects\ServerDevelopment\PhonebookSpring)
+2023-03-29 16:33:48.642 DEBUG 10888 --- [main] ru.academits.PhonebookSpringApplication  : Running with Spring Boot v2.7.9, Spring v5.3.25
+2023-03-29 16:33:48.642  INFO 10888 --- [main] ru.academits.PhonebookSpringApplication  : No active profile set, falling back to 1 default profile: "default"
+2023-03-29 16:33:50.726  WARN 10888 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+2023-03-29 16:33:50.759 ERROR 10888 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2023-03-29 16:36:40.908  INFO 2532 --- [main] ru.academits.PhonebookSpringApplication  : Starting PhonebookSpringApplication using Java 19.0.2 on DESKTOP-K05RAAM with PID 2532 (D:\programming\projects\ServerDevelopment\PhonebookSpring\target\classes started by Timur in D:\programming\projects\ServerDevelopment\PhonebookSpring)
+2023-03-29 16:36:40.955 DEBUG 2532 --- [main] ru.academits.PhonebookSpringApplication  : Running with Spring Boot v2.7.9, Spring v5.3.25
+2023-03-29 16:36:40.958  INFO 2532 --- [main] ru.academits.PhonebookSpringApplication  : No active profile set, falling back to 1 default profile: "default"
+2023-03-29 16:36:43.445  INFO 2532 --- [main] ru.academits.PhonebookSpringApplication  : Started PhonebookSpringApplication in 3.142 seconds (JVM running for 4.3)
+2023-03-29 16:36:43.755  INFO 2532 --- [RMI TCP Connection(4)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-29 16:36:43.757  INFO 2532 --- [RMI TCP Connection(4)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-03-29 16:37:05.422  INFO 2532 --- [http-nio-8080-exec-2] ru.academits.service.ContactService      : all contacts received
+2023-03-29 16:37:15.456  INFO 2532 --- [http-nio-8080-exec-4] ru.academits.service.ContactService      : all contacts received
+2023-03-29 16:37:48.674  INFO 3300 --- [main] ru.academits.PhonebookSpringApplication  : Starting PhonebookSpringApplication using Java 19.0.2 on DESKTOP-K05RAAM with PID 3300 (D:\programming\projects\ServerDevelopment\PhonebookSpring\target\classes started by Timur in D:\programming\projects\ServerDevelopment\PhonebookSpring)
+2023-03-29 16:37:48.678 DEBUG 3300 --- [main] ru.academits.PhonebookSpringApplication  : Running with Spring Boot v2.7.9, Spring v5.3.25
+2023-03-29 16:37:48.680  INFO 3300 --- [main] ru.academits.PhonebookSpringApplication  : No active profile set, falling back to 1 default profile: "default"
+2023-03-29 16:37:50.939  INFO 3300 --- [main] ru.academits.PhonebookSpringApplication  : Started PhonebookSpringApplication in 2.882 seconds (JVM running for 3.731)
+2023-03-29 16:37:51.092  INFO 3300 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-29 16:37:51.094  INFO 3300 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-03-29 16:39:28.020  INFO 11344 --- [main] ru.academits.PhonebookSpringApplication  : Starting PhonebookSpringApplication using Java 19.0.2 on DESKTOP-K05RAAM with PID 11344 (D:\programming\projects\ServerDevelopment\PhonebookSpring\target\classes started by Timur in D:\programming\projects\ServerDevelopment\PhonebookSpring)
+2023-03-29 16:39:28.023 DEBUG 11344 --- [main] ru.academits.PhonebookSpringApplication  : Running with Spring Boot v2.7.9, Spring v5.3.25
+2023-03-29 16:39:28.024  INFO 11344 --- [main] ru.academits.PhonebookSpringApplication  : No active profile set, falling back to 1 default profile: "default"
+2023-03-29 16:39:30.981  INFO 11344 --- [main] ru.academits.PhonebookSpringApplication  : Started PhonebookSpringApplication in 3.462 seconds (JVM running for 4.29)
+2023-03-29 16:39:31.604  INFO 11344 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-29 16:39:31.606  INFO 11344 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-03-29 16:39:34.190  INFO 11344 --- [http-nio-8080-exec-10] ru.academits.service.ContactService      : all contacts received
+2023-03-29 16:39:35.261  INFO 11344 --- [http-nio-8080-exec-7] ru.academits.service.ContactService      : contacts deleted
+2023-03-29 16:39:35.269  INFO 11344 --- [http-nio-8080-exec-3] ru.academits.service.ContactService      : all contacts received
+2023-03-29 16:39:35.941  INFO 11344 --- [http-nio-8080-exec-4] ru.academits.service.ContactService      : contacts deleted
+2023-03-29 16:39:35.946  INFO 11344 --- [http-nio-8080-exec-6] ru.academits.service.ContactService      : all contacts received
+2023-03-29 16:39:37.073  INFO 11344 --- [http-nio-8080-exec-2] ru.academits.service.ContactService      : contacts deleted
+2023-03-29 16:39:37.081  INFO 11344 --- [http-nio-8080-exec-5] ru.academits.service.ContactService      : all contacts received
+2023-03-29 16:39:38.813  INFO 11344 --- [http-nio-8080-exec-7] ru.academits.service.ContactService      : all contacts received
+2023-03-29 16:39:45.108  INFO 2904 --- [main] ru.academits.PhonebookSpringApplication  : Starting PhonebookSpringApplication using Java 19.0.2 on DESKTOP-K05RAAM with PID 2904 (D:\programming\projects\ServerDevelopment\PhonebookSpring\target\classes started by Timur in D:\programming\projects\ServerDevelopment\PhonebookSpring)
+2023-03-29 16:39:45.111 DEBUG 2904 --- [main] ru.academits.PhonebookSpringApplication  : Running with Spring Boot v2.7.9, Spring v5.3.25
+2023-03-29 16:39:45.112  INFO 2904 --- [main] ru.academits.PhonebookSpringApplication  : No active profile set, falling back to 1 default profile: "default"
+2023-03-29 16:39:47.911  INFO 2904 --- [main] ru.academits.PhonebookSpringApplication  : Started PhonebookSpringApplication in 3.324 seconds (JVM running for 4.179)
+2023-03-29 16:39:48.059  INFO 2904 --- [RMI TCP Connection(4)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-29 16:39:48.062  INFO 2904 --- [RMI TCP Connection(4)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2023-03-29 16:39:49.409  INFO 2904 --- [http-nio-8080-exec-5] ru.academits.service.ContactService      : all contacts received
+2023-03-29 16:39:53.720  INFO 2904 --- [http-nio-8080-exec-6] ru.academits.service.ContactService      : contacts filtered
+2023-03-29 16:40:06.828  INFO 2904 --- [http-nio-8080-exec-7] ru.academits.service.ContactService      : contact added
+2023-03-29 16:40:06.837  INFO 2904 --- [http-nio-8080-exec-8] ru.academits.service.ContactService      : all contacts received
+2023-03-29 16:40:37.298  INFO 11632 --- [main] ru.academits.PhonebookSpringApplication  : Starting PhonebookSpringApplication using Java 19.0.2 on DESKTOP-K05RAAM with PID 11632 (D:\programming\projects\ServerDevelopment\PhonebookSpring\target\classes started by Timur in D:\programming\projects\ServerDevelopment\PhonebookSpring)
+2023-03-29 16:40:37.301 DEBUG 11632 --- [main] ru.academits.PhonebookSpringApplication  : Running with Spring Boot v2.7.9, Spring v5.3.25
+2023-03-29 16:40:37.301  INFO 11632 --- [main] ru.academits.PhonebookSpringApplication  : No active profile set, falling back to 1 default profile: "default"
+2023-03-29 16:40:39.434  INFO 11632 --- [scheduling-1] ru.academits.service.ContactService      : all contacts received
+2023-03-29 16:40:39.434  INFO 11632 --- [scheduling-1] ru.academits.service.ContactService      : contacts deleted
+2023-03-29 16:40:39.437  INFO 11632 --- [main] ru.academits.PhonebookSpringApplication  : Started PhonebookSpringApplication in 2.738 seconds (JVM running for 3.552)
+2023-03-29 16:40:39.668  INFO 11632 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-03-29 16:40:39.672  INFO 11632 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-03-29 16:40:41.449  INFO 11632 --- [http-nio-8080-exec-10] ru.academits.service.ContactService      : all contacts received
+2023-03-29 16:40:43.902  INFO 11632 --- [http-nio-8080-exec-1] ru.academits.service.ContactService      : all contacts received
+2023-03-29 16:40:44.437  INFO 11632 --- [scheduling-1] ru.academits.service.ContactService      : all contacts received
+2023-03-29 16:40:44.438  INFO 11632 --- [scheduling-1] ru.academits.service.ContactService      : contacts deleted
+2023-03-29 16:40:45.183  INFO 11632 --- [http-nio-8080-exec-4] ru.academits.service.ContactService      : all contacts received
+2023-03-29 16:40:46.570  INFO 11632 --- [http-nio-8080-exec-3] ru.academits.service.ContactService      : all contacts received
+2023-03-29 16:40:49.445  INFO 11632 --- [scheduling-1] ru.academits.service.ContactService      : all contacts received
+2023-03-29 16:40:49.448  INFO 11632 --- [scheduling-1] ru.academits.service.ContactService      : contacts deleted
+2023-03-29 16:40:50.726  INFO 11632 --- [http-nio-8080-exec-9] ru.academits.service.ContactService      : all contacts received
+2023-03-29 16:40:53.234  INFO 11632 --- [http-nio-8080-exec-7] ru.academits.service.ContactService      : contact added
+2023-03-29 16:40:53.241  INFO 11632 --- [http-nio-8080-exec-10] ru.academits.service.ContactService      : all contacts received
+2023-03-29 16:40:54.449  INFO 11632 --- [scheduling-1] ru.academits.service.ContactService      : all contacts received
+2023-03-29 16:40:54.450  INFO 11632 --- [scheduling-1] ru.academits.service.ContactService      : contacts deleted
+2023-03-29 16:40:59.447  INFO 11632 --- [scheduling-1] ru.academits.service.ContactService      : all contacts received
+2023-03-29 16:41:00.302  INFO 11632 --- [http-nio-8080-exec-1] ru.academits.service.ContactService      : contact added
+2023-03-29 16:41:00.311  INFO 11632 --- [http-nio-8080-exec-4] ru.academits.service.ContactService      : all contacts received
+2023-03-29 16:41:04.433  INFO 11632 --- [http-nio-8080-exec-3] ru.academits.service.ContactService      : contact added
+2023-03-29 16:41:04.440  INFO 11632 --- [http-nio-8080-exec-8] ru.academits.service.ContactService      : all contacts received
+2023-03-29 16:41:04.446  INFO 11632 --- [scheduling-1] ru.academits.service.ContactService      : all contacts received
+2023-03-29 16:41:04.446  INFO 11632 --- [scheduling-1] ru.academits.service.ContactService      : contacts deleted
+2023-03-29 16:41:08.274  INFO 11632 --- [http-nio-8080-exec-6] ru.academits.service.ContactService      : contact added
+2023-03-29 16:41:08.287  INFO 11632 --- [http-nio-8080-exec-2] ru.academits.service.ContactService      : all contacts received
+2023-03-29 16:41:09.442  INFO 11632 --- [scheduling-1] ru.academits.service.ContactService      : all contacts received
+2023-03-29 16:41:09.443  INFO 11632 --- [scheduling-1] ru.academits.service.ContactService      : contacts deleted
+2023-03-29 16:41:10.297  INFO 11632 --- [http-nio-8080-exec-1] ru.academits.service.ContactService      : all contacts received
+2023-03-29 16:41:11.107  INFO 11632 --- [http-nio-8080-exec-6] ru.academits.service.ContactService      : all contacts received
+2023-03-29 16:41:11.629  INFO 11632 --- [http-nio-8080-exec-2] ru.academits.service.ContactService      : contacts deleted
+2023-03-29 16:41:11.636  INFO 11632 --- [http-nio-8080-exec-5] ru.academits.service.ContactService      : all contacts received
+2023-03-29 16:41:13.373  INFO 11632 --- [http-nio-8080-exec-9] ru.academits.service.ContactService      : contacts deleted
+2023-03-29 16:41:13.380  INFO 11632 --- [http-nio-8080-exec-7] ru.academits.service.ContactService      : all contacts received
+2023-03-29 16:41:14.443  INFO 11632 --- [scheduling-1] ru.academits.service.ContactService      : all contacts received
+2023-03-29 16:41:19.447  INFO 11632 --- [scheduling-1] ru.academits.service.ContactService      : all contacts received

@@ -9,13 +9,17 @@ function Contact(firstName, lastName, phone) {
 new Vue({
     el: "#app",
     data: {
+
         validation: false,
         serverValidation: false,
         firstName: "",
         lastName: "",
         phone: "",
         rows: [],
-        serverError: ""
+        isMainCheckboxChecked: false,
+        serverError: "",
+        filterString: "",
+        regex: /^(\+7|7|8)?[\s\-]?\(?[0-9]{3}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$/
     },
     methods: {
         contactToString: function (contact) {
@@ -43,12 +47,13 @@ new Vue({
             if (this.hasError) {
                 this.validation = true;
                 this.serverValidation = false;
+
                 return;
             }
 
             var self = this;
 
-            var contact = new Contact(this.firstName, this.lastName, this.phone);
+            var contact = [new Contact(this.firstName, this.lastName, this.phone)];
             $.ajax({
                 type: "POST",
                 url: "/phoneBook/rpc/api/v1/addContact",
@@ -69,6 +74,75 @@ new Vue({
             self.phone = "";
             self.validation = false;
         },
+
+        deleteContacts: function (id) {
+            var self = this;
+
+            var contact = [new Contact(this.rows[id].firstName, this.rows[id].lastName, this.rows[id].phone)];
+            $.ajax({
+                type: "POST",
+                url: "/phoneBook/rpc/api/v1/deleteContacts",
+                contentType: "application/json",
+                data: JSON.stringify(contact)
+            }).done(function () {
+                self.serverValidation = false;
+            }).fail(function (ajaxRequest) {
+                var contactValidation = JSON.parse(ajaxRequest.responseText);
+                self.serverError = contactValidation.error;
+                self.serverValidation = true;
+            }).always(function () {
+                self.loadData();
+            });
+        },
+
+        deleteCheckedContacts: function () {
+            var selectedRows = this.rows.filter(function (row) {
+                return row.checked === true;
+            });
+
+            var selectedContacts = [];
+
+            selectedRows.forEach(function (row) {
+                selectedContacts.push(new Contact(row.firstName, row.lastName, row.phone));
+            })
+
+            var self = this;
+
+            $.ajax({
+                type: "POST",
+                url: "/phoneBook/rpc/api/v1/deleteContacts",
+                contentType: "application/json",
+                data: JSON.stringify(selectedContacts)
+            }).always(function () {
+                self.loadData();
+            });
+        },
+
+        selectAllCheckboxes: function () {
+            var isChecked = this.isMainCheckboxChecked;
+
+            this.rows.forEach(function (row) {
+                row.checked = !isChecked;
+            });
+        },
+        filter: function () {
+            var filterString = this.filterString.toLowerCase();
+
+            var self = this;
+
+            $.ajax({
+                type: "POST",
+                url: "/phoneBook/rpc/api/v1/filterContacts",
+                data: "filterString=" + filterString
+            }).done(function (contactListByFilterFormServer) {
+                self.rows = self.convertContactList(contactListByFilterFormServer);
+            });
+        },
+        dropFilterString: function () {
+            this.filterString = "";
+            this.loadData();
+        },
+
         loadData: function () {
             var self = this;
 
@@ -108,6 +182,13 @@ new Vue({
             if (!this.phone) {
                 return {
                     message: "Поле Телефон должно быть заполнено.",
+                    error: true
+                };
+            }
+
+            if (!this.regex.test(this.phone)) {
+                return {
+                    message: "Поле Телефон должно быть заполнено в формате +79995551234.",
                     error: true
                 };
             }
