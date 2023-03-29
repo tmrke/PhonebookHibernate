@@ -77,6 +77,7 @@ public class ContactService {
         return contactValidation;
     }
 
+    //added logs
     public ContactValidation addContact(List<Contact> contacts) {
         ContactValidation contactValidation = validateContact(contacts, false);
 
