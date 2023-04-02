@@ -1,19 +1,27 @@
 package ru.academits.model;
 
+import javax.persistence.*;
 import java.util.Objects;
 
+@Entity
+@Table(name = "contact")
 public class Contact {
-    private int id;
+    @Id
+    @GeneratedValue
+    private Long id;
+    @Column
     private String firstName;
+    @Column
     private String lastName;
+    @Column(unique = true)
     private String phone;
     private boolean important;
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

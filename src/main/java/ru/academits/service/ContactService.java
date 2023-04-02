@@ -4,7 +4,7 @@ package ru.academits.service;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
-import ru.academits.dao.ContactDao;
+import ru.academits.dao.ContactDaoImpl;
 import ru.academits.model.Contact;
 import ru.academits.model.ContactValidation;
 
@@ -15,11 +15,11 @@ import java.util.Random;
 @Service
 public class ContactService {
     private final ContactValidation contactValidation = new ContactValidation();
-    private final ContactDao contactDao;
+    private final ContactDaoImpl contactDao;
     private static final Logger logger = LoggerFactory.getLogger(ContactService.class);
 
 
-    public ContactService(ContactDao contactDao) {
+    public ContactService(ContactDaoImpl contactDao) {
         this.contactDao = contactDao;
     }
 
