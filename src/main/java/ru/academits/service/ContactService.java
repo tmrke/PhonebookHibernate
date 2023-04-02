@@ -3,7 +3,6 @@ package ru.academits.service;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 import ru.academits.dao.ContactDao;
 import ru.academits.model.Contact;
@@ -108,8 +107,6 @@ public class ContactService {
         return contactValidation;
     }
 
-    //deletes random contact every five second
-    @Scheduled(fixedRate = 5000)
     public void deleteRandomContacts() {
         List<Contact> allContacts = getAllContacts();
         Random random = new Random();
