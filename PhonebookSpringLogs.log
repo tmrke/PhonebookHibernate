@@ -402,3 +402,103 @@ Identify and stop the process that's listening on port 8080 or configure this ap
 2023-04-02 17:58:45.791  INFO 2768 --- [scheduling-1] ru.academits.service.ContactService      : all contacts received
 2023-04-02 17:58:48.791  INFO 2768 --- [scheduling-1] ru.academits.service.ContactService      : all contacts received
 2023-04-02 17:58:51.787  INFO 2768 --- [scheduling-1] ru.academits.service.ContactService      : all contacts received
+2023-04-02 18:04:25.259  INFO 4376 --- [main] ru.academits.PhonebookSpringApplication  : Starting PhonebookSpringApplication using Java 19.0.2 on DESKTOP-IF2RP6D with PID 4376 (G:\programming\projects\ServerDevelop\PhonebookSpring\target\classes started by namat in G:\programming\projects\ServerDevelop\PhonebookSpring)
+2023-04-02 18:04:25.260 DEBUG 4376 --- [main] ru.academits.PhonebookSpringApplication  : Running with Spring Boot v2.7.9, Spring v5.3.25
+2023-04-02 18:04:25.261  INFO 4376 --- [main] ru.academits.PhonebookSpringApplication  : No active profile set, falling back to 1 default profile: "default"
+2023-04-02 18:04:26.346  INFO 4376 --- [scheduling-1] ru.academits.service.ContactService      : Contact service: all contacts received
+2023-04-02 18:04:26.346  INFO 4376 --- [scheduling-1] ru.academits.service.ContactService      : Contact service: contacts deleted
+2023-04-02 18:04:26.347  INFO 4376 --- [main] ru.academits.PhonebookSpringApplication  : Started PhonebookSpringApplication in 1.33 seconds (JVM running for 1.686)
+2023-04-02 18:04:26.734  INFO 4376 --- [RMI TCP Connection(3)-10.8.0.26] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-02 18:04:26.735  INFO 4376 --- [RMI TCP Connection(3)-10.8.0.26] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-04-02 18:04:31.357  INFO 4376 --- [scheduling-1] ru.academits.service.ContactService      : Contact service: all contacts received
+2023-04-02 18:04:31.357  INFO 4376 --- [scheduling-1] ru.academits.service.ContactService      : Contact service: contacts deleted
+2023-04-02 18:04:36.347  INFO 4376 --- [scheduling-1] ru.academits.service.ContactService      : Contact service: all contacts received
+2023-04-02 18:04:36.347  INFO 4376 --- [scheduling-1] ru.academits.service.ContactService      : Contact service: contacts deleted
+2023-04-02 18:04:41.358  INFO 4376 --- [scheduling-1] ru.academits.service.ContactService      : Contact service: all contacts received
+2023-04-02 18:04:46.359  INFO 4376 --- [scheduling-1] ru.academits.service.ContactService      : Contact service: all contacts received
+2023-04-02 18:04:51.350  INFO 4376 --- [scheduling-1] ru.academits.service.ContactService      : Contact service: all contacts received
+2023-04-02 18:04:56.359  INFO 4376 --- [scheduling-1] ru.academits.service.ContactService      : Contact service: all contacts received
+2023-04-02 18:05:01.346  INFO 4376 --- [scheduling-1] ru.academits.service.ContactService      : Contact service: all contacts received
+2023-04-02 18:05:06.359  INFO 4376 --- [scheduling-1] ru.academits.service.ContactService      : Contact service: all contacts received
+2023-04-02 18:05:11.354  INFO 4376 --- [scheduling-1] ru.academits.service.ContactService      : Contact service: all contacts received
+2023-04-02 18:05:16.351  INFO 4376 --- [scheduling-1] ru.academits.service.ContactService      : Contact service: all contacts received
+2023-04-02 18:05:21.357  INFO 4376 --- [scheduling-1] ru.academits.service.ContactService      : Contact service: all contacts received
+2023-04-02 18:05:21.529  INFO 4376 --- [http-nio-8080-exec-7] ru.academits.service.ContactService      : Phonebook controller: called method "getAllContacts"
+2023-04-02 18:05:21.529  INFO 4376 --- [http-nio-8080-exec-7] ru.academits.service.ContactService      : Contact service: all contacts received
+2023-04-02 18:05:26.355  INFO 4376 --- [scheduling-1] ru.academits.service.ContactService      : Contact service: all contacts received
+2023-04-02 18:05:28.264  INFO 4376 --- [http-nio-8080-exec-10] ru.academits.service.ContactService      : Phonebook controller: called method "addContact"
+2023-04-02 18:05:28.264  INFO 4376 --- [http-nio-8080-exec-10] ru.academits.service.ContactService      : Contact service: contact added
+2023-04-02 18:05:28.269  INFO 4376 --- [http-nio-8080-exec-2] ru.academits.service.ContactService      : Phonebook controller: called method "getAllContacts"
+2023-04-02 18:05:28.269  INFO 4376 --- [http-nio-8080-exec-2] ru.academits.service.ContactService      : Contact service: all contacts received
+2023-04-02 18:05:31.350  INFO 4376 --- [scheduling-1] ru.academits.service.ContactService      : Contact service: all contacts received
+2023-04-02 18:05:31.350  INFO 4376 --- [scheduling-1] ru.academits.service.ContactService      : Contact service: contacts deleted
+2023-04-02 18:05:36.358  INFO 4376 --- [scheduling-1] ru.academits.service.ContactService      : Contact service: all contacts received
+2023-04-02 18:05:41.359  INFO 4376 --- [scheduling-1] ru.academits.service.ContactService      : Contact service: all contacts received
+2023-04-02 18:05:46.355  INFO 4376 --- [scheduling-1] ru.academits.service.ContactService      : Contact service: all contacts received
+2023-04-02 18:05:51.350  INFO 4376 --- [scheduling-1] ru.academits.service.ContactService      : Contact service: all contacts received
+2023-04-02 18:05:56.360  INFO 4376 --- [scheduling-1] ru.academits.service.ContactService      : Contact service: all contacts received
+2023-04-02 18:06:01.348  INFO 4376 --- [scheduling-1] ru.academits.service.ContactService      : Contact service: all contacts received
+2023-04-02 18:06:06.347  INFO 4376 --- [scheduling-1] ru.academits.service.ContactService      : Contact service: all contacts received
+2023-04-02 18:06:11.346  INFO 4376 --- [scheduling-1] ru.academits.service.ContactService      : Contact service: all contacts received
+2023-04-02 18:06:16.359  INFO 4376 --- [scheduling-1] ru.academits.service.ContactService      : Contact service: all contacts received
+2023-04-02 18:06:21.359  INFO 4376 --- [scheduling-1] ru.academits.service.ContactService      : Contact service: all contacts received
+2023-04-02 18:06:26.355  INFO 4376 --- [scheduling-1] ru.academits.service.ContactService      : Contact service: all contacts received
+2023-04-02 18:06:31.350  INFO 4376 --- [scheduling-1] ru.academits.service.ContactService      : Contact service: all contacts received
+2023-04-02 18:06:36.349  INFO 4376 --- [scheduling-1] ru.academits.service.ContactService      : Contact service: all contacts received
+2023-04-02 18:06:41.349  INFO 4376 --- [scheduling-1] ru.academits.service.ContactService      : Contact service: all contacts received
+2023-04-02 18:06:46.360  INFO 4376 --- [scheduling-1] ru.academits.service.ContactService      : Contact service: all contacts received
+2023-04-02 18:06:51.355  INFO 4376 --- [scheduling-1] ru.academits.service.ContactService      : Contact service: all contacts received
+2023-04-02 18:06:56.355  INFO 4376 --- [scheduling-1] ru.academits.service.ContactService      : Contact service: all contacts received
+2023-04-02 18:07:01.351  INFO 4376 --- [scheduling-1] ru.academits.service.ContactService      : Contact service: all contacts received
+2023-04-02 18:07:05.286  INFO 7100 --- [main] ru.academits.PhonebookSpringApplication  : Starting PhonebookSpringApplication using Java 19.0.2 on DESKTOP-IF2RP6D with PID 7100 (G:\programming\projects\ServerDevelop\PhonebookSpring\target\classes started by namat in G:\programming\projects\ServerDevelop\PhonebookSpring)
+2023-04-02 18:07:05.287 DEBUG 7100 --- [main] ru.academits.PhonebookSpringApplication  : Running with Spring Boot v2.7.9, Spring v5.3.25
+2023-04-02 18:07:05.288  INFO 7100 --- [main] ru.academits.PhonebookSpringApplication  : No active profile set, falling back to 1 default profile: "default"
+2023-04-02 18:07:06.380  INFO 7100 --- [scheduling-1] ru.academits.service.ContactService      : all contacts received
+2023-04-02 18:07:06.380  INFO 7100 --- [scheduling-1] ru.academits.service.ContactService      : contacts deleted
+2023-04-02 18:07:06.382  INFO 7100 --- [main] ru.academits.PhonebookSpringApplication  : Started PhonebookSpringApplication in 1.335 seconds (JVM running for 1.685)
+2023-04-02 18:07:06.799  INFO 7100 --- [RMI TCP Connection(3)-10.8.0.26] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-02 18:07:06.800  INFO 7100 --- [RMI TCP Connection(3)-10.8.0.26] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-04-02 18:07:08.592  INFO 7100 --- [http-nio-8080-exec-3] ru.academits.service.ContactService      : called method "getAllContacts"
+2023-04-02 18:07:08.592  INFO 7100 --- [http-nio-8080-exec-3] ru.academits.service.ContactService      : all contacts received
+2023-04-02 18:07:11.382  INFO 7100 --- [scheduling-1] ru.academits.service.ContactService      : all contacts received
+2023-04-02 18:07:11.382  INFO 7100 --- [scheduling-1] ru.academits.service.ContactService      : contacts deleted
+2023-04-02 18:07:16.389  INFO 7100 --- [scheduling-1] ru.academits.service.ContactService      : all contacts received
+2023-04-02 18:07:16.389  INFO 7100 --- [scheduling-1] ru.academits.service.ContactService      : contacts deleted
+2023-04-02 18:07:19.138  INFO 7100 --- [http-nio-8080-exec-2] ru.academits.service.ContactService      : called method "addContact"
+2023-04-02 18:07:19.138  INFO 7100 --- [http-nio-8080-exec-2] ru.academits.service.ContactService      : contact added
+2023-04-02 18:07:19.143  INFO 7100 --- [http-nio-8080-exec-4] ru.academits.service.ContactService      : called method "getAllContacts"
+2023-04-02 18:07:19.143  INFO 7100 --- [http-nio-8080-exec-4] ru.academits.service.ContactService      : all contacts received
+2023-04-02 18:07:19.995  INFO 7100 --- [http-nio-8080-exec-5] ru.academits.service.ContactService      : called method "deleteContacts"
+2023-04-02 18:07:19.996  INFO 7100 --- [http-nio-8080-exec-5] ru.academits.service.ContactService      : contacts deleted
+2023-04-02 18:07:19.999  INFO 7100 --- [http-nio-8080-exec-6] ru.academits.service.ContactService      : called method "getAllContacts"
+2023-04-02 18:07:20.000  INFO 7100 --- [http-nio-8080-exec-6] ru.academits.service.ContactService      : all contacts received
+2023-04-02 18:07:21.383  INFO 7100 --- [scheduling-1] ru.academits.service.ContactService      : all contacts received
+2023-04-02 18:07:26.394  INFO 7100 --- [scheduling-1] ru.academits.service.ContactService      : all contacts received
+2023-04-02 18:07:31.389  INFO 7100 --- [scheduling-1] ru.academits.service.ContactService      : all contacts received
+2023-04-02 18:07:36.393  INFO 7100 --- [scheduling-1] ru.academits.service.ContactService      : all contacts received
+2023-04-02 18:07:41.385  INFO 7100 --- [scheduling-1] ru.academits.service.ContactService      : all contacts received
+2023-04-02 18:07:46.393  INFO 7100 --- [scheduling-1] ru.academits.service.ContactService      : all contacts received
+2023-04-02 18:07:51.390  INFO 7100 --- [scheduling-1] ru.academits.service.ContactService      : all contacts received
+2023-04-02 18:07:56.380  INFO 7100 --- [scheduling-1] ru.academits.service.ContactService      : all contacts received
+2023-04-02 18:08:01.394  INFO 7100 --- [scheduling-1] ru.academits.service.ContactService      : all contacts received
+2023-04-02 18:08:06.381  INFO 7100 --- [scheduling-1] ru.academits.service.ContactService      : all contacts received
+2023-04-02 18:08:13.113  INFO 7612 --- [main] ru.academits.PhonebookSpringApplication  : Starting PhonebookSpringApplication using Java 19.0.2 on DESKTOP-IF2RP6D with PID 7612 (G:\programming\projects\ServerDevelop\PhonebookSpring\target\classes started by namat in G:\programming\projects\ServerDevelop\PhonebookSpring)
+2023-04-02 18:08:13.115 DEBUG 7612 --- [main] ru.academits.PhonebookSpringApplication  : Running with Spring Boot v2.7.9, Spring v5.3.25
+2023-04-02 18:08:13.115  INFO 7612 --- [main] ru.academits.PhonebookSpringApplication  : No active profile set, falling back to 1 default profile: "default"
+2023-04-02 18:08:14.219  INFO 7612 --- [scheduling-1] ru.academits.service.ContactService      : all contacts received
+2023-04-02 18:08:14.219  INFO 7612 --- [scheduling-1] ru.academits.service.ContactService      : contacts deleted
+2023-04-02 18:08:14.221  INFO 7612 --- [main] ru.academits.PhonebookSpringApplication  : Started PhonebookSpringApplication in 1.344 seconds (JVM running for 1.688)
+2023-04-02 18:08:14.511  INFO 7612 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-02 18:08:14.512  INFO 7612 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-04-02 18:08:14.582  INFO 7612 --- [http-nio-8080-exec-2] ru.academits.service.ContactService      : Phonebook controller: called method "getAllContacts"
+2023-04-02 18:08:14.582  INFO 7612 --- [http-nio-8080-exec-2] ru.academits.service.ContactService      : all contacts received
+2023-04-02 18:08:15.396  INFO 7612 --- [http-nio-8080-exec-3] ru.academits.service.ContactService      : Phonebook controller: called method "deleteContacts"
+2023-04-02 18:08:15.396  INFO 7612 --- [http-nio-8080-exec-3] ru.academits.service.ContactService      : contacts deleted
+2023-04-02 18:08:15.401  INFO 7612 --- [http-nio-8080-exec-4] ru.academits.service.ContactService      : Phonebook controller: called method "getAllContacts"
+2023-04-02 18:08:15.401  INFO 7612 --- [http-nio-8080-exec-4] ru.academits.service.ContactService      : all contacts received
+2023-04-02 18:08:19.220  INFO 7612 --- [scheduling-1] ru.academits.service.ContactService      : all contacts received
+2023-04-02 18:08:19.220  INFO 7612 --- [scheduling-1] ru.academits.service.ContactService      : contacts deleted
+2023-04-02 18:08:24.235  INFO 7612 --- [scheduling-1] ru.academits.service.ContactService      : all contacts received
+2023-04-02 18:08:29.234  INFO 7612 --- [scheduling-1] ru.academits.service.ContactService      : all contacts received
+2023-04-02 18:08:34.220  INFO 7612 --- [scheduling-1] ru.academits.service.ContactService      : all contacts received
+2023-04-02 18:08:39.224  INFO 7612 --- [scheduling-1] ru.academits.service.ContactService      : all contacts received

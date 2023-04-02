@@ -83,7 +83,7 @@ public class ContactService {
         for (Contact contact : contacts) {
             if (contactValidation.isValid()) {
                 contactDao.add(contact);
-                logger.info("contact added");
+                logger.info("Contact service: contact added");
             }
         }
 
@@ -91,7 +91,7 @@ public class ContactService {
     }
 
     public List<Contact> getAllContacts() {
-        logger.info("all contacts received");
+        logger.info("Contact service: all contacts received");
 
         return contactDao.getAllContacts();
     }
@@ -100,7 +100,7 @@ public class ContactService {
         ContactValidation contactValidation = validateContact(contacts, true);
 
         if (contactValidation.isValid()) {
-            logger.info("contacts deleted");
+            logger.info("Contact service: contacts deleted");
             contactDao.delete(contacts);
         }
 
@@ -119,7 +119,7 @@ public class ContactService {
     }
 
     public List<Contact> getContactsByFilter(String filterString) {
-        logger.info("contacts filtered");
+        logger.info("Contact service: contacts filtered");
 
         return contactDao.filter(filterString);
     }
