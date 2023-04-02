@@ -2,6 +2,7 @@ package ru.academits;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import ru.academits.dao.ContactDao;
 import ru.academits.dao.ContactDaoImpl;
 import ru.academits.model.Contact;
 import ru.academits.model.ContactValidation;
@@ -12,7 +13,7 @@ import java.util.Collections;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class PhonebookTest {            //added test
-    private final ContactDaoImpl contactDao = new ContactDaoImpl();
+    private final ContactDao contactDao = new ContactDaoImpl();
     private final ContactService contactService = new ContactService(contactDao);
     private final Contact contact1 = new Contact();
     private final Contact contact2 = new Contact();

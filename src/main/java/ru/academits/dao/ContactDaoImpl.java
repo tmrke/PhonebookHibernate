@@ -40,8 +40,12 @@ public class ContactDaoImpl extends GenericDaoImpl<Contact, Long> implements Con
 
     }
 
-    public void delete(List<Contact> toDeleteContacts) {
+    public void remove(List<Contact> toDeleteContacts) {
+        for (Contact contact : toDeleteContacts) {
+            entityManager.remove(contact);
+        }
 
+        entityManager.flush();
     }
 
     public List<Contact> filter(String filterString) {

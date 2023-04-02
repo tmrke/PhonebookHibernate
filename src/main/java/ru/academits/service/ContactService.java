@@ -4,7 +4,7 @@ package ru.academits.service;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
-import ru.academits.dao.ContactDaoImpl;
+import ru.academits.dao.ContactDao;
 import ru.academits.model.Contact;
 import ru.academits.model.ContactValidation;
 
@@ -15,11 +15,11 @@ import java.util.Random;
 @Service
 public class ContactService {
     private final ContactValidation contactValidation = new ContactValidation();
-    private final ContactDaoImpl contactDao;
+    private final ContactDao contactDao;
     private static final Logger logger = LoggerFactory.getLogger(ContactService.class);
 
 
-    public ContactService(ContactDaoImpl contactDao) {
+    public ContactService(ContactDao contactDao) {
         this.contactDao = contactDao;
     }
 
@@ -82,7 +82,7 @@ public class ContactService {
 
         for (Contact contact : contacts) {
             if (contactValidation.isValid()) {
-                contactDao.add(contact);
+                contactDao.create(contact);
                 logger.info("Contact service: contact added");
             }
         }
@@ -101,7 +101,7 @@ public class ContactService {
 
         if (contactValidation.isValid()) {
             logger.info("Contact service: contacts deleted");
-            contactDao.delete(contacts);
+            contactDao.remove(contacts);
         }
 
         return contactValidation;
@@ -118,9 +118,9 @@ public class ContactService {
         }
     }
 
-    public List<Contact> getContactsByFilter(String filterString) {
+    public List<Contact> getContactsByFilter(String phone) {
         logger.info("Contact service: contacts filtered");
 
-        return contactDao.filter(filterString);
+        return contactDao.findByPhone(phone);
     }
 }

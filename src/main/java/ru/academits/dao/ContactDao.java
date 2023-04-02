@@ -8,4 +8,6 @@ public interface ContactDao extends GenericDao<Contact, Long> {
     List<Contact> getAllContacts();
 
     List<Contact> findByPhone(String phone);
+
+    void remove(List<Contact> contacts);
 }
