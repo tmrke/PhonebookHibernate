@@ -20,6 +20,7 @@ public class PhoneBookController {
         this.contactService = contactService;
     }
 
+    //add logs
     @RequestMapping(value = "getAllContacts", method = RequestMethod.GET)
     @ResponseBody
     public List<Contact> getAllContacts() {
