@@ -30,6 +30,7 @@ public class ContactService {
                 return true;
             }
         }
+
         return false;
     }
 
@@ -101,7 +102,7 @@ public class ContactService {
 
         if (contactValidation.isValid()) {
             logger.info("Contact service: contacts deleted");
-            contactDao.remove(contacts);
+           contactDao.remove(contacts);
         }
 
         return contactValidation;

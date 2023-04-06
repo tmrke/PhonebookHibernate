@@ -13,10 +13,13 @@ public interface GenericDao<T, PK extends Serializable> {
     void update(T obj);
 
     @Transactional
-    void remove(T obj);
+    void remove(List<T> objs);
 
     T getById(PK id);
 
     @Transactional
     List<T> findAll();
+
+    @Transactional
+    void delete(List<T> objs);
 }

@@ -1,8 +1,10 @@
 package ru.academits.dao;
 
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 import ru.academits.model.Contact;
 
+import javax.persistence.Query;
 import javax.persistence.TypedQuery;
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
@@ -36,19 +38,19 @@ public class ContactDaoImpl extends GenericDaoImpl<Contact, Long> implements Con
         return q.getResultList();
     }
 
-    public void add(Contact contact) {
-
-    }
-
-    public void remove(List<Contact> toDeleteContacts) {
-        for (Contact contact : toDeleteContacts) {
-            entityManager.remove(contact);
-        }
-
-        entityManager.flush();
-    }
-
     public List<Contact> filter(String filterString) {
         return null;
     }
+
+//    @Transactional
+//    @Override
+//    public void remove(List<Contact> contacts) {
+//        for (Contact contact : contacts) {
+//            Query query = entityManager.createQuery("DELETE FROM Contact c WHERE c.id = :id");
+//            query.setParameter("id", contact.getId());
+//            query.executeUpdate();
+//        }
+//
+//        entityManager.flush();
+//    }
 }

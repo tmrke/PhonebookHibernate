@@ -1,6 +1,7 @@
 package ru.academits.dao;
 
 import org.springframework.transaction.annotation.Transactional;
+import ru.academits.model.Contact;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
@@ -36,8 +37,12 @@ public class GenericDaoImpl<T, PK extends Serializable> implements GenericDao<T,
 
     @Transactional
     @Override
-    public void remove(T obj) {
-        entityManager.remove(obj);
+    public void remove(List<T> objs) {
+        for (T obj : objs) {
+            entityManager.remove(obj);
+        }
+
+        entityManager.flush();
     }
 
     @Override
@@ -57,5 +62,15 @@ public class GenericDaoImpl<T, PK extends Serializable> implements GenericDao<T,
         TypedQuery<T> q = entityManager.createQuery(select);
 
         return q.getResultList();
+    }
+
+    @Transactional
+    @Override
+    public void delete(List<T> objs) {
+        for (T obj : objs) {
+            entityManager.remove(obj);
+        }
+
+        entityManager.flush();
     }
 }
