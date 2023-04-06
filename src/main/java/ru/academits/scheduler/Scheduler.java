@@ -12,7 +12,7 @@ public class Scheduler {
         this.contactService = contactService;
     }
 
-    //deletes random contact every five second
+            //deletes random contact every five second
 //    @Scheduled(fixedRate = 5000)
 //    public void deleteRandomContacts() {
 //        contactService.deleteRandomContacts();
