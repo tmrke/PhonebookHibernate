@@ -43,9 +43,9 @@ public class ContactDaoImpl extends GenericDaoImpl<Contact, Long> implements Con
 
         Root<Contact> root = cq.from(clazz);
 
-        cq.where(cb.or(cb.equal(root.get("lastName"), filterString)),
+        cq.where(cb.or((cb.equal(root.get("lastName"), filterString)),
                 (cb.equal(root.get("firstName"), filterString)),
-                (cb.equal(root.get("phone"), filterString)));
+                (cb.equal(root.get("phone"), filterString))));
 
         CriteriaQuery<Contact> select = cq.select(root);
         TypedQuery<Contact> q = entityManager.createQuery(select);
