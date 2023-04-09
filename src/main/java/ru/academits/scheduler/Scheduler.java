@@ -13,9 +13,9 @@ public class Scheduler {
     }
 
     //deletes random contact every five second
-//    @Scheduled(fixedRate = 5000)
-//    public void deleteRandomContacts() {
-//        contactService.deleteRandomContacts();
-//    }
+    @Scheduled(fixedRate = 5000)
+    public void deleteRandomContacts() {
+        contactService.deleteRandomContacts();
+    }
 
 }
