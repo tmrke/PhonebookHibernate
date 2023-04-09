@@ -5,7 +5,7 @@ import java.util.Objects;
 
 @Entity
 @Table(name = "contact")
-public class Contact {
+public class Contact {      //DAO
     @Id
     @GeneratedValue
     private Long id;

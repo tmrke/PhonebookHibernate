@@ -8,9 +8,9 @@ import ru.academits.dao.ContactDao;
 import ru.academits.model.Contact;
 import ru.academits.model.ContactValidation;
 
-import java.util.Collections;
 import java.util.List;
 import java.util.Random;
+import java.util.stream.Stream;
 
 @Service
 public class ContactService {
@@ -24,17 +24,11 @@ public class ContactService {
     }
 
     private boolean isExistContactWithPhone(String phone) {
-        List<Contact> contactList = contactDao.getAllContacts();
-        for (Contact contact : contactList) {
-            if (contact.getPhone().equals(phone)) {
-                return true;
-            }
-        }
-
-        return false;
+        List<Contact> contactList = contactDao.findByPhone(phone);
+        return !contactList.isEmpty();
     }
 
-    private ContactValidation validateContact(List<Contact> contacts, boolean toDelete) {
+    private ContactValidation validateContact(List<Contact> contacts) {
         contactValidation.setValid(true);
 
         for (Contact contact : contacts) {
@@ -59,14 +53,14 @@ public class ContactService {
                 return contactValidation;
             }
 
-            if (isExistContactWithPhone(contact.getPhone()) && !toDelete) {
+            if (isExistContactWithPhone(contact.getPhone())) {
                 contactValidation.setValid(false);
                 contactValidation.setError("Номер телефона не должен дублировать другие номера в телефонной книге.");
 
                 return contactValidation;
             }
 
-            if (toDelete && !isExistContactWithPhone(contact.getPhone())) {
+            if (isExistContactWithPhone(contact.getPhone())) {
                 contactValidation.setValid(false);
                 contactValidation.setError("Такого контакта нет в телефонной книге.");
 
@@ -79,14 +73,10 @@ public class ContactService {
 
     //added logs
     public ContactValidation addContact(List<Contact> contacts) {
-        ContactValidation contactValidation = validateContact(contacts, false);
+        ContactValidation contactValidation = validateContact(contacts);
+        contacts.forEach(contactDao::create);
+        logger.info("Contact service: contact added");
 
-        for (Contact contact : contacts) {
-            if (contactValidation.isValid()) {
-                contactDao.create(contact);
-                logger.info("Contact service: contact added");
-            }
-        }
 
         return contactValidation;
     }
@@ -97,15 +87,9 @@ public class ContactService {
         return contactDao.getAllContacts();
     }
 
-    public ContactValidation deleteContacts(List<Contact> contacts) {
-        ContactValidation contactValidation = validateContact(contacts, true);
-
-        if (contactValidation.isValid()) {
-            logger.info("Contact service: contacts deleted");
-           contactDao.remove(contacts);
-        }
-
-        return contactValidation;
+    public void deleteContacts(List<Long> contactsId) {
+        contactsId.forEach(contactDao::remove);
+        logger.info("Contact service: contacts deleted");
     }
 
     public void deleteRandomContacts() {
@@ -115,13 +99,14 @@ public class ContactService {
 
         if (!allContacts.isEmpty()) {
             randomIndex = random.nextInt(allContacts.size());
-            deleteContacts(Collections.singletonList(allContacts.get(randomIndex)));
+            deleteContacts(Stream.of(allContacts.get(randomIndex)).map(Contact::getId).toList());
         }
     }
 
-    public List<Contact> getContactsByFilter(String phone) {
+    public List<Contact> getContactsByFilter(String filterString) {
         logger.info("Contact service: contacts filtered");
 
-        return contactDao.findByPhone(phone);
+        return contactDao.findByFilterString(filterString);
+
     }
 }

@@ -1,12 +1,12 @@
 package ru.academits.dao;
 
 import org.springframework.transaction.annotation.Transactional;
-import ru.academits.model.Contact;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.TypedQuery;
 import javax.persistence.criteria.CriteriaBuilder;
+import javax.persistence.criteria.CriteriaDelete;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Root;
 import java.io.Serializable;
@@ -37,12 +37,15 @@ public class GenericDaoImpl<T, PK extends Serializable> implements GenericDao<T,
 
     @Transactional
     @Override
-    public void remove(List<T> objs) {
-        for (T obj : objs) {
-            entityManager.remove(obj);
-        }
+    public void remove(PK id) {             //передается id = null
+        CriteriaBuilder cb = entityManager.getCriteriaBuilder();
+        CriteriaDelete<T> cd = cb.createCriteriaDelete(clazz);
 
-        entityManager.flush();
+        Root<T> root = cd.from(clazz);
+
+        cd.where(cb.equal(root.get("id"), id));
+
+        entityManager.createQuery(cd).executeUpdate();
     }
 
     @Override
@@ -62,15 +65,5 @@ public class GenericDaoImpl<T, PK extends Serializable> implements GenericDao<T,
         TypedQuery<T> q = entityManager.createQuery(select);
 
         return q.getResultList();
-    }
-
-    @Transactional
-    @Override
-    public void delete(List<T> objs) {
-        for (T obj : objs) {
-            entityManager.remove(obj);
-        }
-
-        entityManager.flush();
     }
 }

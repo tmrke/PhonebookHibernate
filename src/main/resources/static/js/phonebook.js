@@ -28,6 +28,7 @@ new Vue({
             note += contact.lastName + ", ";
             note += contact.phone;
             note += ")";
+
             return note;
         },
         convertContactList: function (contactListFromServer) {
@@ -75,15 +76,15 @@ new Vue({
             self.validation = false;
         },
 
-        deleteContacts: function (id) {
+        deleteContacts: function (contact) {
             var self = this;
 
-            var contact = [new Contact(this.rows[id].firstName, this.rows[id].lastName, this.rows[id].phone)];
+            var contactId = [contact.id];
             $.ajax({
                 type: "POST",
                 url: "/phoneBook/rpc/api/v1/deleteContacts",
                 contentType: "application/json",
-                data: JSON.stringify(contact)
+                data: JSON.stringify(contactId)
             }).done(function () {
                 self.serverValidation = false;
             }).fail(function (ajaxRequest) {
@@ -103,7 +104,7 @@ new Vue({
             var selectedContacts = [];
 
             selectedRows.forEach(function (row) {
-                selectedContacts.push(new Contact(row.firstName, row.lastName, row.phone));
+                selectedContacts.push(row.id);
             })
 
             var self = this;

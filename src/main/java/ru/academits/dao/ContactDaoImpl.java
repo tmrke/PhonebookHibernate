@@ -1,10 +1,8 @@
 package ru.academits.dao;
 
 import org.springframework.stereotype.Repository;
-import org.springframework.transaction.annotation.Transactional;
 import ru.academits.model.Contact;
 
-import javax.persistence.Query;
 import javax.persistence.TypedQuery;
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
@@ -38,19 +36,20 @@ public class ContactDaoImpl extends GenericDaoImpl<Contact, Long> implements Con
         return q.getResultList();
     }
 
-    public List<Contact> filter(String filterString) {
-        return null;
-    }
+    @Override
+    public List<Contact> findByFilterString(String filterString) {      //возвращает пустой список
+        CriteriaBuilder cb = entityManager.getCriteriaBuilder();
+        CriteriaQuery<Contact> cq = cb.createQuery(clazz);
 
-//    @Transactional
-//    @Override
-//    public void remove(List<Contact> contacts) {
-//        for (Contact contact : contacts) {
-//            Query query = entityManager.createQuery("DELETE FROM Contact c WHERE c.id = :id");
-//            query.setParameter("id", contact.getId());
-//            query.executeUpdate();
-//        }
-//
-//        entityManager.flush();
-//    }
+        Root<Contact> root = cq.from(clazz);
+
+        cq.where(cb.or(cb.equal(root.get("lastName"), filterString)),
+                (cb.equal(root.get("firstName"), filterString)),
+                (cb.equal(root.get("phone"), filterString)));
+
+        CriteriaQuery<Contact> select = cq.select(root);
+        TypedQuery<Contact> q = entityManager.createQuery(select);
+
+        return q.getResultList();
+    }
 }

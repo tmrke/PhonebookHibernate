@@ -56,7 +56,7 @@
                 <td v-text="row.firstName"></td>
                 <td v-text="row.phone"></td>
                 <td>
-                    <button type="button" class="btn btn-primary" v-on:click="deleteContacts(index)">Удалить</button>
+                    <button type="button" class="btn btn-primary" v-on:click="deleteContacts(row)">Удалить</button>
                 </td>
             </template>
         </tr>
