@@ -10,7 +10,7 @@ service [#blue]-> contactDao
 
 database DB #green
 
-contactDao -> DB: request
+contactDao [#blue]-> DB: request
 DB [#green]-> contactDao: response
 contactDao [#green]-> service
 service [#green]-> converter: convert
