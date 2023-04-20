@@ -1,0 +1,20 @@
+@startuml
+
+actor User #blue
+
+User [#blue]-> userInterface: action
+userInterface [#blue]-> controller: REST request
+controller [#blue]-> converter
+converter [#blue]-> service : convert
+service [#blue]-> contactDao
+
+database DB #green
+
+contactDao -> DB: request
+DB [#green]-> contactDao: response
+contactDao [#green]-> service
+service [#green]-> converter: convert
+converter [#green]-> controller
+controller [#green]-> userInterface: REST response
+
+@enduml
