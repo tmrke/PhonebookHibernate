@@ -37,7 +37,7 @@ public class GenericDaoImpl<T, PK extends Serializable> implements GenericDao<T,
 
     @Transactional
     @Override
-    public void remove(PK id) {             //передается id = null
+    public void remove(PK id) {
         CriteriaBuilder cb = entityManager.getCriteriaBuilder();
         CriteriaDelete<T> cd = cb.createCriteriaDelete(clazz);
 

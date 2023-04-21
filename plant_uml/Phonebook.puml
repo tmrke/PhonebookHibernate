@@ -1,12 +1,15 @@
 @startuml
 
 actor User #blue
+User [#blue]-> userComputer
+userComputer [#blue]-> userInterface: action
 
-User [#blue]-> userInterface: action
+box "server"#LightBlue
 userInterface [#blue]-> controller: REST request
 controller [#blue]-> converter
 converter [#blue]-> service : convert
 service [#blue]-> contactDao
+
 
 database DB #green
 
@@ -15,6 +18,9 @@ DB [#green]-> contactDao: response
 contactDao [#green]-> service
 service [#green]-> converter: convert
 converter [#green]-> controller
-controller [#green]-> userInterface: REST response
+end box
 
+controller [#green]-> userInterface: REST response
+userInterface [#green]-> userComputer
+userComputer [#green]-> User
 @enduml
